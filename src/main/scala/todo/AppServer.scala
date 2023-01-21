@@ -1,11 +1,12 @@
 package todo
 
-import todo.route.LoginRoute
+import todo.http.LoginRoute
+import zio.ZIOAppDefault
 import zio.http.Server
 
-object AppServer {
+object AppServer extends ZIOAppDefault {
 
   val app = LoginRoute.route
 
-  def start = Server.serve(app, None).provide(Server.default)
+  def run = Server.serve(app, None).provide(Server.default)
 }

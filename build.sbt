@@ -8,6 +8,7 @@ ThisBuild / organizationName := "todo"
 val zio        = "2.0.4"
 val zioHttp    = "0.0.3"
 val zioLogging = "2.1.5"
+//val zioJsoniter = "0.3.0"
 val jwt        = "9.1.2"
 val slick      = "3.4.1"
 val totoshi    = "2.6.0"
@@ -23,6 +24,7 @@ lazy val root = (project in file("."))
       "dev.zio"                               %% "zio"                   % zio,
       "dev.zio"                               %% "zio-http"              % zioHttp,
       "com.github.jwt-scala"                  %% "jwt-core"              % jwt,
+//      "dev.zio"                               %% "zio-http-jsoniter"     % zioJsoniter,
       "com.typesafe.slick"                    %% "slick"                 % slick,
       "com.typesafe.slick"                    %% "slick-hikaricp"        % slick,
       "com.github.tototoshi"                  %% "slick-joda-mapper"     % totoshi,
